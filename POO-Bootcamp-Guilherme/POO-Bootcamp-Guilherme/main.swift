@@ -639,3 +639,8 @@ class RestauranteGourmet: Restaurante {
         super.init(nome: nome, localizacao: localizacao)
     }
 }
+
+
+var idade: String?
+
+var minhaIdade: Int = Int(idade ?? "0") ?? 0
