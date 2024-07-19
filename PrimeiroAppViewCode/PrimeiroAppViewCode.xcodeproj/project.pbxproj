@@ -12,6 +12,9 @@
 		FAC623292C48A83D00B90BE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC623282C48A83D00B90BE8 /* LoginViewController.swift */; };
 		FAC6232E2C48A83F00B90BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC6232D2C48A83F00B90BE8 /* Assets.xcassets */; };
 		FAC623312C48A83F00B90BE8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FAC623302C48A83F00B90BE8 /* Base */; };
+		FAC7A6332C49CDAE001D90BE /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7A6322C49CDAE001D90BE /* LoginScreen.swift */; };
+		FAC7A63E2C49F8E9001D90BE /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7A63D2C49F8E9001D90BE /* RegisterScreen.swift */; };
+		FAC7A6412C49F91E001D90BE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7A6402C49F91E001D90BE /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FAC6232D2C48A83F00B90BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC623302C48A83F00B90BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC623322C48A83F00B90BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC7A6322C49CDAE001D90BE /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		FAC7A63D2C49F8E9001D90BE /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		FAC7A6402C49F91E001D90BE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		FAC623232C48A83D00B90BE8 /* PrimeiroAppViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				FAC7A63C2C49F8CC001D90BE /* Register */,
+				FAC7A6302C49CD39001D90BE /* Login */,
 				FAC623242C48A83D00B90BE8 /* AppDelegate.swift */,
 				FAC623262C48A83D00B90BE8 /* SceneDelegate.swift */,
-				FAC623282C48A83D00B90BE8 /* LoginViewController.swift */,
 				FAC6232D2C48A83F00B90BE8 /* Assets.xcassets */,
 				FAC6232F2C48A83F00B90BE8 /* LaunchScreen.storyboard */,
 				FAC623322C48A83F00B90BE8 /* Info.plist */,
 			);
 			path = PrimeiroAppViewCode;
+			sourceTree = "<group>";
+		};
+		FAC7A6302C49CD39001D90BE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAC623282C48A83D00B90BE8 /* LoginViewController.swift */,
+				FAC7A6312C49CD42001D90BE /* Screen */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAC7A6312C49CD42001D90BE /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7A6322C49CDAE001D90BE /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FAC7A63C2C49F8CC001D90BE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7A63F2C49F8ED001D90BE /* Screen */,
+				FAC7A6402C49F91E001D90BE /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FAC7A63F2C49F8ED001D90BE /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7A63D2C49F8E9001D90BE /* RegisterScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC7A63E2C49F8E9001D90BE /* RegisterScreen.swift in Sources */,
 				FAC623292C48A83D00B90BE8 /* LoginViewController.swift in Sources */,
+				FAC7A6332C49CDAE001D90BE /* LoginScreen.swift in Sources */,
+				FAC7A6412C49F91E001D90BE /* RegisterViewController.swift in Sources */,
 				FAC623252C48A83D00B90BE8 /* AppDelegate.swift in Sources */,
 				FAC623272C48A83D00B90BE8 /* SceneDelegate.swift in Sources */,
 			);
